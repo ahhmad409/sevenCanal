@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>7 Canal | Gallery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Construction Company Website Template" name="keywords" />
+    <meta content="Construction Company Website Template" name="description" />
+
+    <!-- Favicon -->
+    <link href="./img/favicon.png" rel="icon" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FOnt awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap 4 cdn -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+
+    <style>
+      .item {
+        transition: 0.2s ease-in-out;
+      }
+      .item:hover {
+        filter: brightness(60%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Nav Bar Start -->
+      <div class="nav-bar nav-sticky">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <button
+              type="button"
+              class="navbar-toggler ml-auto"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- prettier-ignore -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+            <a href="#"> <img src="./img/logo.png" alt="logo" /> </a>
+              <div class="navbar-nav ">
+                <a href="./index.html" class="nav-item nav-link hover-underline-animation">Home</a>
+                <a href="./about.html" class="nav-item nav-link hover-underline-animation">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" >Downloads</a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item downloadLink" data-toggle="modal" data-target="#exampleModalCenter" id="brochureLink">Brochure</a>
+                      <a href="#" class="dropdown-item downloadLink" data-toggle="modal" data-target="#exampleModalCenter">3D Walkthrough</a>
+                      <a href="#" class="dropdown-item downloadLink" data-toggle="modal" data-target="#exampleModalCenter">Layouts</a>
+                      <a href="#" class="dropdown-item downloadLink"  data-toggle="modal" data-target="#exampleModalCenter">Price Lists</a>
+                      <a href="#" class="dropdown-item downloadLink"  data-toggle="modal" data-target="#exampleModalCenter">Construction Update</a>
+                    </div>
+                  </div>
+                <a href="./layouts.html" class="nav-item nav-link hover-underline-animation">Layouts</a>
+                <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact</a>
+                <a href="./updates.html" class="nav-item nav-link hover-underline-animation">Updates</a>
+                <a href="#" class="nav-item nav-link active">Gallery</a>
+                <a href="./amenities.html" class="nav-item nav-link hover-underline-animation">Amenities</a>
+                <a href="./location.html" class="nav-item nav-link hover-underline-animation">Location</a>
+                <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" >Our Partners</a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter">Marketing Partners </a>
+                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter">Architect Partners</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Nav Bar End -->
+
+      <!-- Modal starts -->
+      <!-- prettier-ignore -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Please fill below form
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail">Email address</label>
+                  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="inputContact">Contact</label>
+                  <input type="text" class="form-control" id="inputContact" required placeholder="Contact">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+              <a href="#" type="button" id="downloadBtn" class="btn btn-primary">Submit & Download </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal ends -->
+
+      <h1 class="page-heading text-center">Gallery</h1>
+
+      <div class="container-fluid">
+        <div class="row mt-4">
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/1.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/1.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/2.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/2.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/3.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/3.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/4.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/4.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/5.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/5.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/6.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/6.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/7.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/7.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/8.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/8.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/9.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/9.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/10.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/10.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/11.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/11.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/12.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/12.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="img/13.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="./img/13.jpg" width="100%" height="100%" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+      <!-- prettier-ignore -->
+      <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-contact">
+                <h2>USA Office</h2>
+                <p>ASLAM CAPITAL</p>
+                <p> <i class="fa fa-map-marker-alt"></i>1622 Greenleaf Ave, Des Plaines IL 60018. USA </p>
+                <p> <i class="fa fa-envelope"></i> Owais@aslamcapitalgroup.com </p>
+                <p><i class="fas fa-mobile"></i>+312 646 9111</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-contact">
+                <h2>Head Office</h2>
+                <p> <i class="fa fa-map-marker-alt"></i> 7 Canal Park, Gulberg 2, Lahore </p>
+                <p><i class="fa fa-phone-alt"></i> 042 359 590 77</p>
+                <p><i class="fas fa-mobile"></i>+92 322 851 8920</p>
+                <p><i class="fas fa-mobile"></i>+92 321 402 6666</p>
+                <p><i class="fas fa-mobile"></i>+92 300 842 0277</p>
+                <p><i class="fas fa-mobile"></i>+92 321 404 4441</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-contact">
+                <h2>UK Office</h2>
+                <p>WRM & PARTNERS</p>
+                <p> <i class="fa fa-map-marker-alt"></i>140 High Road, London, E18 2QS </p>
+                <p><i class="fa fa-envelope"></i> sales@wrmandpartners.com</p>
+                <p><i class="fas fa-mobile"></i>+44 (0) 771 650 8914</p>
+                <p><i class="fas fa-mobile"></i>+44 (0) 203 150 0064</p>
+                <p>www.wrmandpartners.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container footer-menu">
+          <div class="f-menu">
+            <a href="https://www.facebook.com/7canaldevelopers" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/channel/UCQa9vEGSu97bCHEns9asVNg" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/7canaldevelopers/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/7c-residencia" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div> -->
+        <div class="container copyright">
+          <div class="row">
+            <div class="col-md-6">
+              <p> &copy; <span style="color: #fdbe33"> 7 Canal Developers</span>, All Rights Reserved. </p>
+            </div>
+            <div class="col-md-6">
+              <!-- <p> Designed By <a href="https://nkutechnologies.com/" target="_blank" >NKU Technologies</a> </p> -->
+               <div class="container footer-menu">
+                <div class="f-menu">
+                  <a href="https://www.facebook.com/7canaldevelopers" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.youtube.com/channel/UCQa9vEGSu97bCHEns9asVNg" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <a href="https://www.instagram.com/7canaldevelopers/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/company/7c-residencia" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Template Javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
