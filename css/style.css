@@ -8,6 +8,10 @@ body {
   font-weight: 400;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 @keyframes identifier {
 }
 
@@ -680,6 +684,7 @@ a:focus {
   font-size: 60px;
   line-height: 60px;
   background-image: linear-gradient(#ffffff, #fdbe33);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1744,7 +1749,7 @@ a:focus {
 
 .sidebar .category-widget ul li span {
   display: inline-block;
-  float: right;
+  /* float: right; */
 }
 
 .sidebar .sidebar-widget .tag-widget {
@@ -2352,4 +2357,13 @@ a:focus {
 
 #iframe-homepage {
   width: 100%;
+}
+
+/* to make dropdown opens on hover instead of click */
+/* https://www.tutorialrepublic.com/faq/how-to-open-bootstrap-dropdown-menu-on-hover-rather-than-click.php#:~:text=Answer%3A%20Use%20the%20jQuery%20hover,using%20the%20CSS%20and%20jQuery. */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 0;
 }
