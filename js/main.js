@@ -12,10 +12,10 @@
       $(".back-to-top").fadeOut("slow");
     }
   });
-  $(".back-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
-    return false;
-  });
+  // $(".back-to-top").click(function () {
+  //   $("html, body").animate({ scrollTop: 0 }, 300, "easeInOutExpo");
+  //   return false;
+  // });
 
   // Sticky Navbar
   // $(window).scroll(function () {
@@ -167,13 +167,13 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
     document.querySelector(".modal-footer").replaceChild(a, downloadButton);
 
     a.addEventListener("click", () => {
-      const name = document.getElementById("inputName").value;
-      const email = document.getElementById("inputEmail").value;
-      const contact = document.getElementById("inputContact").value;
+      const name = document.getElementById("inputName");
+      const email = document.getElementById("inputEmail");
+      const contact = document.getElementById("inputContact");
 
       console.log(`Name: ${name} \nEmail: ${email} \nContact: ${contact}`);
 
-      if (!name || !email || !contact) {
+      if (!name.value || !email.value || !contact.value) {
         a.removeAttribute("download");
         Swal.fire({
           title: "Please Enter All Fields",
@@ -181,6 +181,28 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
         });
         return;
       }
+
+      const validEmail =
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      if (email.value.match(validEmail)) {
+      } else {
+        Swal.fire({
+          title: "Please check your email again!",
+          confirmButtonText: "OK",
+        });
+        return;
+      }
+
+      const validPhone = "^([0-9()/+ -]*)$";
+      if (contact.value.match(validPhone)) {
+      } else {
+        Swal.fire({
+          title: "Please check your phone number!",
+          confirmButtonText: "OK",
+        });
+        return;
+      }
+
       a.setAttribute("download", "download");
 
       // if (link.textContent == "Brochure")
@@ -203,6 +225,8 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
       else if (link.textContent == "Construction Update")
         a.setAttribute("href", "./daonlod.jpg");
       else if (link.textContent == "Layouts")
+        a.setAttribute("href", "./daonlod.jpg");
+      else if (link.textContent == "Floor Plans")
         a.setAttribute("href", "./daonlod.jpg");
     });
   });
@@ -262,6 +286,7 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
 //     });
 // });
 
+// to handle dropdownof bootstrap and make it open when hovering instead of clicking on it
 // https://www.tutorialrepublic.com/faq/how-to-open-bootstrap-dropdown-menu-on-hover-rather-than-click.php#:~:text=Answer%3A%20Use%20the%20jQuery%20hover,using%20the%20CSS%20and%20jQuery.
 $(document).ready(function () {
   $(".dropdown").hover(function () {

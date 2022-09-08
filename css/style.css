@@ -2367,3 +2367,12 @@ a:focus {
 .dropdown-menu {
   margin-top: 0;
 }
+
+.fa-chevron-up {
+  color: #121518;
+}
+
+.fa-chevron-up:hover {
+  color: #fdbe33;
+  background: #121518;
+}
