@@ -1939,7 +1939,7 @@ a:focus {
 }
 
 .contact .col-md-6 {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -1947,7 +1947,11 @@ a:focus {
   /* background: #030f27; */
   background: #294785;
   background: #fdbe33;
-  background-color: #d2ac47;
+  /* background-color: #d2ac47; */
+  background-color: #555;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .contact .col-md-6:last-child {
@@ -2005,16 +2009,16 @@ a:focus {
   padding: 0 15px;
 }
 
-.contact .contact-form input {
+.contact input {
   color: #ffffff;
   height: 40px;
-  border-radius: 0;
+  border-radius: 0 !important;
   border-width: 1px;
-  border-color: rgba(256, 256, 256, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
   background: transparent;
 }
 
-.contact .contact-form textarea {
+.contact textarea {
   color: #ffffff;
   height: 185px;
   border-radius: 0;
@@ -2023,29 +2027,41 @@ a:focus {
   background: transparent;
 }
 
-.contact .contact-form input:focus,
-.contact .contact-form textarea {
+.contact input:focus,
+.contact textarea:focus {
   box-shadow: none;
+  background: transparent;
+  color: #fff;
+  outline: 0;
+  border-color: #fff !important;
 }
 
-.contact .contact-form .form-control::placeholder {
+.contact .form-control::placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.contact .contact-form .form-control::-ms-input-placeholder {
+.contact .form-control::-ms-input-placeholder {
+  color: #666;
+}
+
+.contact .form-control::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.contact .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
+.contact input::placeholder {
+  color: #ccc !important;
+}
+.contact textarea::placeholder {
+  color: #ccc !important;
 }
 
-.contact .contact-form .btn {
+.contact .btn {
   padding: 16px 30px;
   font-size: 16px;
   font-weight: 600;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: #fdbe33;
   color: #030f27;
   border: none;
   border-radius: 0;

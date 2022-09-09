@@ -286,62 +286,48 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <div class="contact-form">
-                <div id="success"></div>
-                <form
-                  name="sentMessage"
-                  id="contactForm"
-                  novalidate="novalidate"
-                >
-                  <div class="control-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="personName"
-                      placeholder="Your Name"
-                      required
-                      data-validation-required-message="Please enter your name"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="control-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="personEmail"
-                      placeholder="Your Email"
-                      required
-                      data-validation-required-message="Please enter your email"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <!-- <div class="control-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="Subject"
-                      required="required"
-                      data-validation-required-message="Please enter a subject"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div> -->
-                  <div class="control-group">
-                    <textarea
-                      class="form-control"
-                      id="personMessage"
-                      placeholder="Message"
-                      required
-                      data-validation-required-message="Please enter your message"
-                    ></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div>
-                    <button class="btn" type="button" id="sendMessageButton">
-                      Send Message
-                    </button>
-                  </div>
-                </form>
+              <div id="contact-form">
+                <div class="mb-3">
+                  <label for="personName">Name*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="personName"
+                    placeholder="John Doe"
+                  />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <div class="mb-3">
+                  <label for="personEmail">Email*</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="personEmail"
+                    placeholder="info@7canaldevelopers.com"
+                  />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <div class="mb-3">
+                  <label for="personMessage">Message*</label>
+                  <textarea
+                    class="form-control"
+                    id="personMessage"
+                    rows="3"
+                    placeholder="Your Query"
+                  ></textarea>
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <div>
+                  <button class="btn" type="button" id="sendMessageButton">
+                    Send Message
+                  </button>
+                </div>
               </div>
             </div>
             <div class="col-md-6 pt-0 pb-0">
