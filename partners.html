@@ -50,7 +50,9 @@
       <div class="nav-bar nav-sticky">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <!-- <a href="#" class="navbar-brand">MENU</a> -->
+            <a href="./index.html">
+              <img src="./img/logo.png" alt="logo" class="navbar-brand" />
+            </a>
             <button
               type="button"
               class="navbar-toggler ml-auto"
@@ -62,27 +64,28 @@
 
             <!-- prettier-ignore -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-            <a href="#"> <img src="./img/logo.png" alt="logo" /> </a>
+            <a href="#"> <img src="./img/logo.png" alt="logo" class="navbar-brand-desktop" /> </a>
               <div class="navbar-nav ">
-                <a href="./index.html" class="nav-item nav-link  hover-underline-animation">Home</a>
-                <a href="./about.html" class="nav-item nav-link hover-underline-animation">About Us</a>
+                <a href="./index.html" class="nav-item nav-link hover-underline-animation">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >Downloads</a>
+                    <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" >Downloads</a>
                     <div class="dropdown-menu">
-                      <a href="./Brochure.pdf" class="dropdown-item" download >Brochure </a>
-                      <a href="./floorPlan.html" class="dropdown-item" download>3D Walkthrough</a>
-                      <a href="./progressReport.html" class="dropdown-item" download>Layouts</a>
-                      <a href="./progressReport.html" class="dropdown-item" download>Price Lists</a>
-                      <a href="./Brochure.pdf" class="dropdown-item" download>Construction Update</a>
+                      <a href="#" class="dropdown-item downloadLink" data-toggle="modal" data-target="#exampleModalCenter" id="brochureLink">Brochure</a>
+                      <a href="#" class="dropdown-item downloadLink" data-toggle="modal" data-target="#exampleModalCenter">3D Walkthrough</a>
+                      <a href="#" class="dropdown-item downloadLink" data-toggle="modal" data-target="#exampleModalCenter">Layouts</a>
+                      <a href="#" class="dropdown-item downloadLink"  data-toggle="modal" data-target="#exampleModalCenter">Price Lists</a>
+                      <a href="#" class="dropdown-item downloadLink"  data-toggle="modal" data-target="#exampleModalCenter">Construction Update</a>
+                      <a href="#" class="dropdown-item downloadLink"  data-toggle="modal" data-target="#exampleModalCenter">Floor Plans</a>
                     </div>
                   </div>
                 <a href="./layouts.html" class="nav-item nav-link hover-underline-animation">Layouts</a>
-                <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact Us</a>
                 <a href="./updates.html" class="nav-item nav-link hover-underline-animation">Updates</a>
                 <a href="./gallery.html" class="nav-item nav-link hover-underline-animation">Gallery</a>
                 <a href="./amenities.html" class="nav-item nav-link hover-underline-animation">Amenities</a>
                 <a href="./location.html" class="nav-item nav-link hover-underline-animation">Location</a>
-                <a href="#" class="nav-item nav-link active" >Our Partners</a>
+                <a href="#" class="nav-item nav-link active">Our Partners</a>
+                <a href="./about.html" class="nav-item nav-link hover-underline-animation">About</a>
+                <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact</a>
               </div>
             </div>
           </nav>
@@ -93,11 +96,53 @@
     <!-- Main Section -->
     <h1 class="page-heading text-center">Our Partners</h1>
 
+    <div class="container mt-5">
+      <div class="row text-center">
+        <div class="col-12">
+          <img
+            src="./partnersImages/landmark-logo.png"
+            alt="landmark partners"
+          />
+        </div>
+        <div class="col-md-4">
+          <img src="./partnersImages/aslam-capital.png" alt="aslam partners" />
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="./partnersImages/inter-graphics.png"
+            alt="graphic partners"
+          />
+        </div>
+        <div class="col-md-4">
+          <img src="./partnersImages/wrn-and-partners.png" alt="wrm partners" />
+        </div>
+      </div>
+    </div>
+
     <!-- FOOOTER -->
 
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
       <div class="container">
         <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-contact">
+              <h2>Head Office</h2>
+              <p>
+                <i class="fa fa-map-marker-alt"></i> 7 Canal Park, Gulberg 2,
+                Lahore
+              </p>
+              <p>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                info@7canaldevelopers.com
+              </p>
+              <p><i class="fa fa-phone-alt"></i> 042 359 590 77</p>
+              <p><i class="fas fa-mobile"></i>+92 322 851 8920</p>
+              <p><i class="fas fa-mobile"></i>+92 321 402 6666</p>
+              <p><i class="fas fa-mobile"></i>+92 300 842 0277</p>
+              <p><i class="fas fa-mobile"></i>+92 321 404 4441</p>
+            </div>
+          </div>
           <div class="col-md-6 col-lg-4">
             <div class="footer-contact">
               <h2>USA Office</h2>
@@ -108,20 +153,6 @@
               </p>
               <p><i class="fa fa-envelope"></i> Owais@aslamcapitalgroup.com</p>
               <p><i class="fas fa-mobile"></i>+92 312 646 9111</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="footer-contact">
-              <h2>Head Office</h2>
-              <p>
-                <i class="fa fa-map-marker-alt"></i> 7 Canal Park, Gulberg 2,
-                Lahore
-              </p>
-              <p><i class="fa fa-phone-alt"></i> 042 359 590 77</p>
-              <p><i class="fas fa-mobile"></i>+92 322 851 8920</p>
-              <p><i class="fas fa-mobile"></i>+92 321 402 6666</p>
-              <p><i class="fas fa-mobile"></i>+92 300 842 0277</p>
-              <p><i class="fas fa-mobile"></i>+92 321 404 4441</p>
             </div>
           </div>
 

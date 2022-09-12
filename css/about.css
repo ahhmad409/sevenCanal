@@ -25,3 +25,13 @@ body {
 .projects-container ul li {
   font-size: 18px;
 }
+
+.modal-body img {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+a:active,
+a:focus {
+  color: unset;
+}

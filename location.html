@@ -50,6 +50,9 @@
       <div class="nav-bar nav-sticky">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a href="./index.html">
+              <img src="./img/logo.png" alt="logo" class="navbar-brand" />
+            </a>
             <button
               type="button"
               class="navbar-toggler ml-auto"
@@ -61,10 +64,9 @@
 
             <!-- prettier-ignore -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-            <a href="./index.html"> <img src="./img/logo.png" alt="logo" /> </a>
+            <a href="./index.html"> <img src="./img/logo.png" class="navbar-brand-desktop" alt="logo" /> </a>
               <div class="navbar-nav ">
                 <a href="./index.html" class="nav-item nav-link hover-underline-animation">Home</a>
-                <a href="./about.html" class="nav-item nav-link hover-underline-animation">About</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" >Downloads</a>
                     <div class="dropdown-menu">
@@ -77,18 +79,13 @@
                     </div>
                   </div>
                 <a href="./layouts.html" class="nav-item nav-link hover-underline-animation">Layouts</a>
-                <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact</a>
                 <a href="./updates.html" class="nav-item nav-link hover-underline-animation">Updates</a>
                 <a href="./gallery.html" class="nav-item nav-link hover-underline-animation">Gallery</a>
                 <a href="./amenities.html" class="nav-item nav-link hover-underline-animation">Amenities</a>
                 <a href="#" class="nav-item nav-link active">Location</a>
-                <div class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" >Our Partners</a>
-                  <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter">Marketing Partners </a>
-                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter">Architect Partners</a>
-                  </div>
-                </div>
+                <a href="./partners.html" class="nav-item nav-link hover-underline-animation">Our Partners</a>
+                <a href="./about.html" class="nav-item nav-link hover-underline-animation">About</a>
+                <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact</a>
               </div>
             </div>
           </nav>
@@ -134,41 +131,81 @@
       </div>
       <!-- Modal Ends -->
 
-      <!-- Google maps -->
-      <div class="maps-container">
-        <h1 class="page-heading text-center">Location</h1>
-        <div class="map_main">
-          <div class="map-responsive">
-            <a href="https://goo.gl/maps/uQooMJkNHszkJPnR9" target="_blank"
-              ><img
-                src="./img/location-logo.png"
-                border="0"
-                class="map-logo"
-                alt="map logo"
-            /></a>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.17812281826!2d74.3390556!3d31.532055600000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca613dca79837fff!2zMzHCsDMxJzU1LjQiTiA3NMKwMjAnMjAuNiJF!5e0!3m2!1sen!2s!4v1662364592907!5m2!1sen!2s"
-              width="1280"
-              height="720"
-              id="ifframe"
-              style="border: 0"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+      <div class="container mt-5 mb-5">
+        <h2 style="color: #fdbe33; margin-top: 150px" class="text-center">
+          Location
+        </h2>
+        <p class="text-center mt-2 mb-5">
+          In The Heart Of Lahore <br />Gulberg 2 on Canal Road
+        </p>
+        <div class="map-container-homepage container" data-aos="fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.17812281826!2d74.3390556!3d31.532055600000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca613dca79837fff!2zMzHCsDMxJzU1LjQiTiA3NMKwMjAnMjAuNiJF!5e0!3m2!1sen!2s!4v1662459934734!5m2!1sen!2s"
+            width="1300"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            id="iframe-homepage"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p style="text-align: justify; font-size: 22px" class="mb-5">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Located
+            at the most prestigious and central location of Lahore; 7 Canal
+            offers splendid and spacious residence experience. The LOCATION
+            ensures minimal travel time and hassle free drive to all key areas
+          </p>
         </div>
       </div>
-      <p class="text-center" style="margin: 120px 0 50px 0">
-        2 minutes from here
-      </p>
       <!-- Google maps End-->
 
+      <div class="container distances-container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li>On Canal Road</li>
+              <li>Jail Road <span>1 Min</span></li>
+              <li>Zahoor Elahi Road <span>1 Min</span></li>
+              <li>FC College <span>1 Min</span></li>
+              <li>Kinnard College <span>3 Min</span></li>
+              <li>Mall Road <span>6 Min</span></li>
+              <li>Ferozpure Road <span>3 Min</span></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>
+                Punjab Institute of Cardiology Hospital <span>4 Min</span>
+              </li>
+              <li>Jilani Park (Race Courese Park) <span>4 Min</span></li>
+              <li>Main Boulevard McDonald's <span>5 Min</span></li>
+              <li>Gaddafi Stadium<span>5 Min</span></li>
+              <li>Gymkhana Club<span>5 Min</span></li>
+              <li>MM Alam Road & Liberty Market<span>7 Min</span></li>
+              <li>Airport<span>23 Min</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- <img src="./img/distances.PNG" alt="distances " /> -->
+      </div>
       <!-- Footer Start -->
       <!-- prettier-ignore -->
       <div class="footer wow fadeIn" data-wow-delay="0.3s">
         <div class="container">
           <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-contact">
+                <h2>Head Office</h2>
+                <p> <i class="fa fa-map-marker-alt"></i> 7 Canal Park, Gulberg 2, Lahore </p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> info@7canaldevelopers.com</p>
+
+                <p><i class="fa fa-phone-alt"></i> 042 359 590 77</p>
+                <p><i class="fas fa-mobile"></i>+92 322 851 8920</p>
+                <p><i class="fas fa-mobile"></i>+92 321 402 6666</p>
+                <p><i class="fas fa-mobile"></i>+92 300 842 0277</p>
+                <p><i class="fas fa-mobile"></i>+92 321 404 4441</p>
+              </div>
+            </div>
             <div class="col-md-6 col-lg-4">
               <div class="footer-contact">
                 <h2>USA Office</h2>
@@ -178,18 +215,6 @@
                 <p><i class="fas fa-mobile"></i>+92 312 646 9111</p>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="footer-contact">
-                <h2>Head Office</h2>
-                <p> <i class="fa fa-map-marker-alt"></i> 7 Canal Park, Gulberg 2, Lahore </p>
-                <p><i class="fa fa-phone-alt"></i> 042 359 590 77</p>
-                <p><i class="fas fa-mobile"></i>+92 322 851 8920</p>
-                <p><i class="fas fa-mobile"></i>+92 321 402 6666</p>
-                <p><i class="fas fa-mobile"></i>+92 300 842 0277</p>
-                <p><i class="fas fa-mobile"></i>+92 321 404 4441</p>
-              </div>
-            </div>
-
             <div class="col-md-6 col-lg-4">
               <div class="footer-contact">
                 <h2>UK Office</h2>
@@ -246,6 +271,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/main.js"></script>
   </body>

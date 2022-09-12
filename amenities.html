@@ -38,6 +38,7 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
     <link href="lib/slick/slick.css" rel="stylesheet" />
     <link href="lib/slick/slick-theme.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
@@ -50,6 +51,9 @@
       <div class="nav-bar nav-sticky">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a href="./index.html">
+              <img src="./img/logo.png" alt="logo" class="navbar-brand" />
+            </a>
             <button
               type="button"
               class="navbar-toggler ml-auto"
@@ -61,10 +65,9 @@
 
             <!-- prettier-ignore -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-            <a href="./index.html"> <img src="./img/logo.png" alt="logo" /> </a>
+            <a href="./index.html"> <img src="./img/logo.png" class="navbar-brand-desktop" alt="logo" /> </a>
               <div class="navbar-nav ">
                 <a href="./index.html" class="nav-item nav-link hover-underline-animation">Home</a>
-                <a href="./about.html" class="nav-item nav-link hover-underline-animation">About</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" >Downloads</a>
                     <div class="dropdown-menu">
@@ -77,18 +80,13 @@
                     </div>
                   </div>
                 <a href="./layouts.html" class="nav-item nav-link hover-underline-animation">Layouts</a>
-                <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact</a>
                 <a href="./updates.html" class="nav-item nav-link hover-underline-animation">Updates</a>
                 <a href="./gallery.html" class="nav-item nav-link hover-underline-animation">Gallery</a>
                 <a href="#" class="nav-item nav-link active">Amenities</a>
                 <a href="./location.html" class="nav-item nav-link hover-underline-animation">Location</a>
-                <div class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" >Our Partners</a>
-                  <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter">Marketing Partners </a>
-                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter">Architect Partners</a>
-                  </div>
-                </div>
+                <a href="./partners.html" class="nav-item nav-link hover-underline-animation">Our Partners</a>
+                <a href="./about.html" class="nav-item nav-link hover-underline-animation">About</a>
+                <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact</a>
               </div>
             </div>
           </nav>
@@ -136,11 +134,11 @@
 
       <h1 class="page-heading text-center">The Amenities</h1>
 
-      <div class="container-fluid amenities-container">
+      <div class="container-fluid amenities-container" data-aos="fade-up">
         <div class="card">
           <img
             class="card-img-top"
-            src="./img/gallery1.jpg "
+            src="./amenitiesImages/capsule-lifts.jpg"
             alt="capsule lifts"
           />
           <div class="card-body">
@@ -150,17 +148,17 @@
         <div class="card">
           <img
             class="card-img-top"
-            src="./img/gallery2.jpg "
+            src="./amenitiesImages/swimming-pool.jpg"
             alt="swimming pool"
           />
           <div class="card-body">
-            <p class="card-text text-center">The Swimming Pool</p>
+            <p class="card-text text-center">Swimming Pools</p>
           </div>
         </div>
         <div class="card">
           <img
             class="card-img-top"
-            src="./img/gallery3.jpg "
+            src="./amenitiesImages/leisure-lounge.jpg"
             alt="leisure lounge"
           />
           <div class="card-body">
@@ -169,28 +167,40 @@
         </div>
 
         <div class="card">
-          <img class="card-img-top" src="./img/gallery4.jpg " alt="cafe" />
+          <img
+            class="card-img-top"
+            src="./amenitiesImages/cafe.jpg "
+            alt="cafe"
+          />
           <div class="card-body">
             <p class="card-text text-center">Cafe</p>
           </div>
         </div>
 
         <div class="card">
-          <img class="card-img-top" src="./img/gallery5.jpg " alt="day care" />
+          <img
+            class="card-img-top"
+            src="./amenitiesImages/day-care.jpg"
+            alt="day care"
+          />
           <div class="card-body">
             <p class="card-text text-center">Day Care</p>
           </div>
         </div>
 
         <div class="card">
-          <img class="card-img-top" src="./img/gallery6.jpg " alt="gym" />
+          <img class="card-img-top" src="./amenitiesImages/gym.jpg" alt="gym" />
           <div class="card-body">
             <p class="card-text text-center">Gym</p>
           </div>
         </div>
 
         <div class="card">
-          <img class="card-img-top" src="./img/gallery7.jpg " alt="spa" />
+          <img
+            class="card-img-top"
+            src="./amenitiesImages/the-spa.jpg"
+            alt="spa"
+          />
           <div class="card-body">
             <p class="card-text text-center">The Spa</p>
           </div>
@@ -199,24 +209,56 @@
         <div class="card">
           <img
             class="card-img-top"
-            src="./img/gallery8.jpg "
+            src="./amenitiesImages/steam-and-sauna.jpg"
             alt="steam room and sauna"
           />
           <div class="card-body">
-            <p class="card-text text-center">Steam Room & Sauna</p>
+            <p class="card-text text-center">Steam & Sauna</p>
           </div>
         </div>
 
         <div class="card">
           <img
             class="card-img-top"
-            src="./img/gallery9.jpg "
+            src="./amenitiesImages/hassle-free-multi-level-card-parking.jpg"
             alt="hassle free multi-level car parking"
           />
           <div class="card-body">
             <p class="card-text text-center">
               Hassle Free Multi-Level Car Parking
             </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./amenitiesImages/laundary-services.jpg"
+            alt="laundary services"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">Laundary Services</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./amenitiesImages/grand-reception.jpg"
+            alt="Grand Reception"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">Grand Reception</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://sites.google.com/site/homeupsbattery/_/rsrc/1451390216033/home/ups-battery-install.jpg"
+            alt="24 Hours Power Backup"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">24 Hours Power Backup</p>
           </div>
         </div>
       </div>
@@ -228,17 +270,10 @@
           <div class="row">
             <div class="col-md-6 col-lg-4">
               <div class="footer-contact">
-                <h2>USA Office</h2>
-                <p>ASLAM CAPITAL</p>
-                <p> <i class="fa fa-map-marker-alt"></i>1622 Greenleaf Ave, Des Plaines IL 60018. USA </p>
-                <p> <i class="fa fa-envelope"></i> Owais@aslamcapitalgroup.com </p>
-                <p><i class="fas fa-mobile"></i>+92 312 646 9111</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="footer-contact">
                 <h2>Head Office</h2>
                 <p> <i class="fa fa-map-marker-alt"></i> 7 Canal Park, Gulberg 2, Lahore </p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> info@7canaldevelopers.com</p>
+
                 <p><i class="fa fa-phone-alt"></i> 042 359 590 77</p>
                 <p><i class="fas fa-mobile"></i>+92 322 851 8920</p>
                 <p><i class="fas fa-mobile"></i>+92 321 402 6666</p>
@@ -246,6 +281,16 @@
                 <p><i class="fas fa-mobile"></i>+92 321 404 4441</p>
               </div>
             </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-contact">
+                <h2>USA Office</h2>
+                <p>ASLAM CAPITAL</p>
+                <p> <i class="fa fa-map-marker-alt"></i>1622 Greenleaf Ave, Des Plaines IL 60018. USA </p>
+                <p> <i class="fa fa-envelope"></i> Owais@aslamcapitalgroup.com </p>
+                <p><i class="fas fa-mobile"></i>+92 312 646 9111</p>
+              </div>
+            </div>
+            
 
             <div class="col-md-6 col-lg-4">
               <div class="footer-contact">
@@ -303,9 +348,16 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 700,
+      });
+    </script>
   </body>
 </html>

@@ -50,6 +50,9 @@
       <div class="nav-bar nav-sticky">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a href="./index.html">
+              <img src="./img/logo.png" alt="logo" class="navbar-brand" />
+            </a>
             <button
               type="button"
               class="navbar-toggler ml-auto"
@@ -61,10 +64,9 @@
 
             <!-- prettier-ignore -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-            <a href="./index.html"> <img src="./img/logo.png" alt="logo" /> </a>
+            <a href="./index.html"> <img src="./img/logo.png" alt="logo" class="navbar-brand-desktop" /> </a>
               <div class="navbar-nav ">
                 <a href="./index.html" class="nav-item nav-link hover-underline-animation">Home</a>
-                <a href="./about.html" class="nav-item nav-link hover-underline-animation">About</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" >Downloads</a>
                     <div class="dropdown-menu">
@@ -77,18 +79,13 @@
                     </div>
                   </div>
                 <a href="./layouts.html" class="nav-item nav-link hover-underline-animation">Layouts</a>
-                <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact</a>
                 <a href="#" class="nav-item nav-link active">Updates</a>
                 <a href="./gallery.html" class="nav-item nav-link hover-underline-animation">Gallery</a>
                 <a href="./amenities.html" class="nav-item nav-link hover-underline-animation">Amenities</a>
                 <a href="./location.html" class="nav-item nav-link hover-underline-animation">Location</a>
-                <div class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" >Our Partners</a>
-                  <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter">Marketing Partners </a>
-                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter">Architect Partners</a>
-                  </div>
-                </div>
+                <a href="./partners.html" class="nav-item nav-link hover-underline-animation">Our Partners</a>
+                <a href="./about.html" class="nav-item nav-link hover-underline-animation">About</a>
+                <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact</a>
               </div>
             </div>
           </nav>
@@ -142,6 +139,26 @@
           <div class="row">
             <div class="col-md-6 col-lg-4">
               <div class="footer-contact">
+                <h2>Head Office</h2>
+
+                <p>
+                  <i class="fa fa-map-marker-alt"></i> 7 Canal Park, Gulberg 2,
+                  Lahore
+                </p>
+                <p>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  info@7canaldevelopers.com
+                </p>
+
+                <p><i class="fa fa-phone-alt"></i> 042 359 590 77</p>
+                <p><i class="fas fa-mobile"></i>+92 322 851 8920</p>
+                <p><i class="fas fa-mobile"></i>+92 321 402 6666</p>
+                <p><i class="fas fa-mobile"></i>+92 300 842 0277</p>
+                <p><i class="fas fa-mobile"></i>+92 321 404 4441</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-contact">
                 <h2>USA Office</h2>
                 <p>ASLAM CAPITAL</p>
                 <p>
@@ -152,20 +169,6 @@
                   <i class="fa fa-envelope"></i> Owais@aslamcapitalgroup.com
                 </p>
                 <p><i class="fas fa-mobile"></i>+92 312 646 9111</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="footer-contact">
-                <h2>Head Office</h2>
-                <p>
-                  <i class="fa fa-map-marker-alt"></i> 7 Canal Park, Gulberg 2,
-                  Lahore
-                </p>
-                <p><i class="fa fa-phone-alt"></i> 042 359 590 77</p>
-                <p><i class="fas fa-mobile"></i>+92 322 851 8920</p>
-                <p><i class="fas fa-mobile"></i>+92 321 402 6666</p>
-                <p><i class="fas fa-mobile"></i>+92 300 842 0277</p>
-                <p><i class="fas fa-mobile"></i>+92 321 404 4441</p>
               </div>
             </div>
 
@@ -247,6 +250,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
