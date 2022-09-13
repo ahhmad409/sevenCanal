@@ -35,3 +35,14 @@ a:active,
 a:focus {
   color: unset;
 }
+
+.col-md-3 {
+  overflow: hidden !important;
+}
+.col-md-3 img {
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}

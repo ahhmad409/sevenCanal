@@ -32,6 +32,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
@@ -39,6 +40,7 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
     <link href="lib/slick/slick.css" rel="stylesheet" />
     <link href="lib/slick/slick-theme.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
@@ -147,11 +149,31 @@
               <img src="http://img2.chinadaily.com.cn/images/201907/19/5d311f61a310d8304551b47e.jpeg" class="w-100" alt="steel manufacturing" />
               <!-- <p>PakSteel Re Rolling Mills <br /> MA Casting <br /> Farid Steel Casting <br /> Mian Steel Casting <br /> Pak Farid Industries </p> -->
               <ul>
-                <li>Pak Steel Re Rolling Mills</li>
-                <li>MA Casting</li>
-                <li>Farid Steel Casting</li>
+                <li>Pak Steel Re-Rolling Mills</li>
+                <ul>
+                  <li>Established 1949</li>
+                  <li>Industrial Area I-9, Islamabad</li>
+                </ul>
+                <li>M.A Steel Casting</li>
+                <ul>
+                  <li>Established 2011</li>
+                  <li>Industrial Area Phase V, Hattar, Haripur, KPK</li>
+                </ul>
+                <li>Farid Steel Casting (PVT) LTD</li>
+                <ul>
+                  <li>Established 1990</li>
+                  <li>Industrial Area Phase V, Hattar, Haripur, KPK</li>
+                </ul>
                 <li>Mian Steel Casting</li>
-                <li>Pak Farid Industries</li>
+                <ul>
+                  <li>Established 2009</li>
+                  <li>Industrial Area Gujranwala</li>
+                </ul>
+                <li>Pak Farid Steel Industries (PVT) LTD</li>
+                <ul>
+                  <li>Established 2016</li>
+                  <li>Special Economic Zone, Hattar, Haripur</li>
+                </ul>
               </ul>
             </div>
             <div class="modal-footer">
@@ -178,7 +200,11 @@
               <img src="https://www.miuc.edu.pk/wp-content/uploads/2021/08/hospitality.jpg" class="w-100" alt="hospitality services" />
               <!-- <p>Crown Plaza Hotel, Blue Area, Islamabad</p> -->
               <ul>
-                <li>Crown Plaza Hotel, Blue Area, Islamabad</li>
+                <li>Hotel Crown Plaza</li>
+                <ul>
+                  <li>Established 1999</li>
+                  <li>Jinnah Avenue Blue Area, Islamabad</li>
+                </ul>
               </ul>
             </div>
             <div class="modal-footer">
@@ -254,11 +280,11 @@
 
       <!-- Main Section -->
 
-      <h1 class="page-heading text-center">About Us</h1>
-      <div class="container">
+      <h1 class="page-heading text-center" data-aos="fade-right">About Us</h1>
+      <div class="container" style="overflow: hidden !important">
         <div class="row">
           <div class="col-sm-12">
-            <p class="about-text">
+            <p class="about-text" data-aos="fade-left">
               7 Canal developers are one of the leading real estate developers
               of Pakistan. Since its inception the company has adapted to
               innovative building methods, eco-friendly initiatives and best
@@ -268,7 +294,7 @@
           </div>
         </div>
         <div class="row mt-5">
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-right">
             <a href="#" data-toggle="modal" data-target="#steel2">
               <img
                 src="http://img2.chinadaily.com.cn/images/201907/19/5d311f61a310d8304551b47e.jpeg"
@@ -277,7 +303,7 @@
               <p class="text-center mt-2">Steel Manufacturing</p>
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-left">
             <a href="#" data-toggle="modal" data-target="#hospitality2">
               <img
                 src="https://www.miuc.edu.pk/wp-content/uploads/2021/08/hospitality.jpg"
@@ -286,7 +312,7 @@
               <p class="text-center mt-2">Hospitality Services</p>
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-right">
             <a href="#" data-toggle="modal" data-target="#construction2">
               <img
                 src="https://www.constructiontuts.com/wp-content/uploads/2017/10/Construction-Industry-Overview.jpg"
@@ -295,7 +321,7 @@
               <p class="text-center mt-2">Construction Industry</p>
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-left">
             <a href="#" data-toggle="modal" data-target="#development2">
               <img
                 src="https://www.colliers.com/-/media/images/colliers/asia/regional-image-library/1536x1040-hero-researchnews/generic1536x1040pxkl.ashx?bid=0a1129f133ff4180be8f1e1ccb78c8f5"
@@ -308,9 +334,14 @@
       </div>
 
       <!-- REAL ESTATE PROJECTS START -->
-      <h2 class="page-heading text-center">Real Estate Projects</h2>
-      <div class="container projects-container">
-        <div class="row">
+      <h2 class="page-heading text-center" data-aos="fade-right">
+        Real Estate Projects
+      </h2>
+      <div
+        class="container projects-container"
+        style="overflow: hidden !important"
+      >
+        <div class="row" data-aos="fade-left">
           <div class="col-lg-4">
             <h5>Complete Projects</h5>
             <ul>
@@ -350,7 +381,7 @@
       <!-- REAL ESTATE PROJECTS ENDS -->
 
       <!-- FOOOTER -->
-      <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="footer" data-aos="fade-in">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-lg-4">
@@ -456,7 +487,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
@@ -464,8 +494,15 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Template Javascript -->
     <script src="./js/main.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 700,
+      });
+    </script>
   </body>
 </html>

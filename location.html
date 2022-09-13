@@ -38,6 +38,7 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
     <link href="lib/slick/slick.css" rel="stylesheet" />
     <link href="lib/slick/slick-theme.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -131,8 +132,12 @@
       </div>
       <!-- Modal Ends -->
 
-      <div class="container mt-5 mb-5">
-        <h2 style="color: #fdbe33; margin-top: 150px" class="text-center">
+      <div class="container mt-5 mb-5" style="overflow: hidden !important">
+        <h2
+          style="color: #fdbe33; margin-top: 150px"
+          class="text-center"
+          data-aos="fade-left"
+        >
           Location
         </h2>
         <p class="text-center mt-2 mb-5">
@@ -149,11 +154,15 @@
             id="iframe-homepage"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <p style="text-align: justify; font-size: 22px" class="mb-5">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Located
-            at the most prestigious and central location of Lahore; 7 Canal
-            offers splendid and spacious residence experience. The LOCATION
-            ensures minimal travel time and hassle free drive to all key areas
+          <p
+            style="text-align: justify; font-size: 22px"
+            class="mb-5 mt-5"
+            data-aos="fade-right"
+          >
+            Located at the most prestigious and central location of Lahore; 7
+            Canal offers splendid and spacious residence experience. The
+            LOCATION ensures minimal travel time and hassle free drive to all
+            key areas
           </p>
         </div>
       </div>
@@ -190,7 +199,7 @@
       </div>
       <!-- Footer Start -->
       <!-- prettier-ignore -->
-      <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="footer" data-aos="fade-in">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-lg-4">
@@ -272,6 +281,12 @@
     <script src="lib/slick/slick.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 700,
+      });
+    </script>
 
     <script src="js/main.js"></script>
   </body>
