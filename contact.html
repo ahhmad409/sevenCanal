@@ -38,7 +38,7 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
     <link href="lib/slick/slick.css" rel="stylesheet" />
     <link href="lib/slick/slick-theme.css" rel="stylesheet" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- <link
       rel="stylesheet"
@@ -148,6 +148,11 @@
                   href="./layouts.html"
                   class="nav-item nav-link hover-underline-animation"
                   >Layouts</a
+                >
+                <a
+                  href="./our-projects.html"
+                  class="nav-item nav-link hover-underline-animation"
+                  >Our Projects</a
                 >
                 <a
                   href="./updates.html"
@@ -270,7 +275,7 @@
       <!-- MODAL ENDS -->
 
       <!-- Contact Start -->
-      <div class="contact wow fadeInUp">
+      <div class="contact">
         <div class="container">
           <div class="section-header text-center">
             <p class="page-heading">Get In Touch</p>
@@ -352,7 +357,7 @@
       <!-- Contact End -->
 
       <!-- Footer Start -->
-      <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="footer" data-aos="fade-in">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-lg-4">
@@ -458,7 +463,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
@@ -472,6 +476,12 @@
     <script src="mail/contact.js"></script> -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 700,
+      });
+    </script>
     <script src="./js/main.js"></script>
     <script src="./js/contact.js"></script>
   </body>

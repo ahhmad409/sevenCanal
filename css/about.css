@@ -39,10 +39,37 @@ a:focus {
 .col-md-3 {
   overflow: hidden !important;
 }
-.col-md-3 img {
+/* img {
   transition: transform 0.5s;
 }
 
 img:hover {
   transform: scale(1.05);
+} */
+
+@media (min-width: 992px) {
+  .modal-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .modal-body img {
+    width: 50% !important;
+    border-radius: 0px !important;
+    margin: 0px !important;
+  }
+}
+
+.modal-header {
+  padding: 1rem 1rem;
+  border: none !important;
+  background-color: #333;
+  color: #fff !important;
+}
+.modal-header h5 {
+  color: #fff;
+}
+.modal-header button span {
+  color: #fff !important;
 }

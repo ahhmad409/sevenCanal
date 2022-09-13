@@ -39,6 +39,7 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
     <link href="lib/slick/slick.css" rel="stylesheet" />
     <link href="lib/slick/slick-theme.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
@@ -81,6 +82,7 @@
                     </div>
                   </div>
                 <a href="./layouts.html" class="nav-item nav-link hover-underline-animation">Layouts</a>
+                <a href="./our-projects.html" class="nav-item nav-link hover-underline-animation">Our Projects</a>
                 <a href="#" class="nav-item nav-link active">Updates</a>
                 <a href="./gallery.html" class="nav-item nav-link hover-underline-animation">Gallery</a>
                 <a href="./amenities.html" class="nav-item nav-link hover-underline-animation">Amenities</a>
@@ -136,7 +138,7 @@
 
       <!-- FOOOTER -->
 
-      <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="footer" data-aos="fade-in">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-lg-4">
@@ -244,7 +246,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
@@ -253,8 +254,16 @@
     <script src="lib/slick/slick.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Template Javascript -->
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 700,
+      });
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

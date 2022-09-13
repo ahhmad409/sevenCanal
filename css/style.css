@@ -2434,9 +2434,18 @@ iframe {
   align-items: center;
   justify-content: center;
 }
+
 .header-text {
   font-size: 11px;
   color: #fdbe33;
   margin-bottom: 0px;
   margin-top: 10px;
+}
+
+.light-yellow {
+  color: #fdbe33 !important;
+}
+
+.dark-yellow {
+  color: #cf9312 !important;
 }

@@ -6,14 +6,12 @@ body {
   color: #cf9312;
   font-weight: normal;
 }
-.row {
-  row-gap: 2rem;
-}
-.card-img,
-.card-img-top {
-  aspect-ratio: 1/0.7;
+
+.projects-container ul {
+  list-style: none;
+  padding-left: 10px;
 }
 
-.floor-plans-container img {
-  width: 100%;
+.projects-container ul li {
+  font-size: 18px;
 }
