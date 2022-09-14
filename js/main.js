@@ -162,7 +162,6 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
     a.classList.add("btn", "btn-primary");
     a.setAttribute("id", "downloadBtn");
     a.setAttribute("type", "button");
-    // a.setAttribute("download", "download");
     a.setAttribute("href", "#");
     document.querySelector(".modal-footer").replaceChild(a, downloadButton);
 
@@ -174,7 +173,7 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
       console.log(`Name: ${name} \nEmail: ${email} \nContact: ${contact}`);
 
       if (!name.value || !email.value || !contact.value) {
-        a.removeAttribute("download");
+        a.setAttribute("href", "#");
         Swal.fire({
           title: "Please Enter All Fields",
           confirmButtonText: "OK",
@@ -186,6 +185,8 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
         /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
       if (email.value.match(validEmail)) {
       } else {
+        a.setAttribute("href", "#");
+
         Swal.fire({
           title: "Please check your email again!",
           confirmButtonText: "OK",
@@ -196,6 +197,8 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
       const validPhone = "^([0-9()/+ -]*)$";
       if (contact.value.match(validPhone)) {
       } else {
+        a.setAttribute("href", "#");
+
         Swal.fire({
           title: "Please check your phone number!",
           confirmButtonText: "OK",
@@ -203,31 +206,33 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
         return;
       }
 
-      a.setAttribute("download", "download");
-
-      // if (link.textContent == "Brochure")
-      //   a.setAttribute("href", "./7Canal Brochure.pdf");
-      // else if (link.textContent == "3D Walkthrough")
-      //   a.setAttribute("href", "./walkthroughVideo.mp4");
-      // else if (link.textContent == "Price Lists")
-      //   a.setAttribute("href", "./walkthroughVideo.mp4");
-      // else if (link.textContent == "Construction Update")
-      //   a.setAttribute("href", "./walkthroughVideo.mp4");
-      // else if (link.textContent == "Layouts")
-      //   a.setAttribute("href", "./walkthroughVideo.mp4");
+      // a.setAttribute("download", "download");
 
       if (link.textContent == "Brochure")
-        a.setAttribute("href", "./daonlod.jpg");
+        a.setAttribute("href", "./7Canal Brochure.pdf");
       else if (link.textContent == "3D Walkthrough")
-        a.setAttribute("href", "./daonlod.jpg");
+        a.setAttribute("href", "./walkthroughVideo.mp4");
       else if (link.textContent == "Price Lists")
-        a.setAttribute("href", "./daonlod.jpg");
+        a.setAttribute("href", "./walkthroughVideo.mp4");
       else if (link.textContent == "Construction Update")
-        a.setAttribute("href", "./daonlod.jpg");
+        a.setAttribute("href", "./walkthroughVideo.mp4");
       else if (link.textContent == "Layouts")
-        a.setAttribute("href", "./daonlod.jpg");
+        a.setAttribute("href", "./walkthroughVideo.mp4");
       else if (link.textContent == "Floor Plans")
-        a.setAttribute("href", "./daonlod.jpg");
+        a.setAttribute("href", "./floorplans.pdf");
+
+      // if (link.textContent == "Brochure")
+      //   a.setAttribute("href", "./daonlod.jpg");
+      // else if (link.textContent == "3D Walkthrough")
+      //   a.setAttribute("href", "./daonlod.jpg");
+      // else if (link.textContent == "Price Lists")
+      //   a.setAttribute("href", "./daonlod.jpg");
+      // else if (link.textContent == "Construction Update")
+      //   a.setAttribute("href", "./daonlod.jpg");
+      // else if (link.textContent == "Layouts")
+      //   a.setAttribute("href", "./daonlod.jpg");
+      // else if (link.textContent == "Floor Plans")
+      //   a.setAttribute("href", "./daonlod.jpg");
     });
   });
 });

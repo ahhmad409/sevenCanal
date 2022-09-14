@@ -1104,10 +1104,18 @@ a:focus {
   width: 100%;
   color: #121518;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: 0.5s;
 }
+
+/* .faqs .card-header a::before {
+  content: "Q: ";
+  position: relative;
+  font-weight: bold;
+  color: #fdbe33;
+  margin-right: 10px;
+} */
 
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"] {
   background: #fdbe33;
