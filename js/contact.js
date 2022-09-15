@@ -31,64 +31,46 @@ const sendMessageButton = document.getElementById("sendMessageButton");
 const personName = document.getElementById("personName");
 const personEmail = document.getElementById("personEmail");
 const personMessage = document.getElementById("personMessage");
-let error = false;
 
 sendMessageButton.addEventListener("click", (e) => {
   checkInputs();
 });
 
 function checkInputs() {
-  const nameValue = personName.value;
-  const emailValue = personEmail.value;
-  const messageValue = personMessage.value;
-
-  if (nameValue === "") {
-    setErrorFor(personName, "Name cannot be blank");
-  } else {
-    setSuccessFor(personName);
+  if (!personName.value || !personEmail.value || !personMessage.value) {
+    Swal.fire({
+      title: "Please Enter All Fields",
+      confirmButtonText: "OK",
+    });
+    return;
   }
 
-  if (emailValue === "") {
-    setErrorFor(personEmail, "Email cannot be blank");
-  } else if (!isEmail(emailValue)) {
-    setErrorFor(personEmail, "Not a valid email");
-  } else {
-    setSuccessFor(personEmail);
+  if (!isEmail(personEmail.value)) {
+    Swal.fire({
+      title: "Please check your email again",
+      confirmButtonText: "OK",
+    });
+    return;
   }
 
-  if (messageValue === "") {
-    setErrorFor(personMessage, "Message cannot be blank");
-  } else {
-    setSuccessFor(personMessage);
-  }
+  Swal.fire({
+    title: "Your Query Has Been Recieved!",
+    confirmButtonText: "OK",
+  });
+
+  const body = {
+    name: personName.value,
+    email: personEmail.value,
+    message: personMessage.value,
+  };
+
+  axios.post("http://localhost:5501", body).then((response) => {
+    console.log(response.data.data);
+  });
 
   personName.value = "";
   personEmail.value = "";
   personMessage.value = "";
-
-  if (error) return;
-
-  Swal.fire({
-    title: "Your Query Has Been Recieved, Thank you!",
-    confirmButtonText: "OK",
-  });
-}
-
-function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  console.log(formControl);
-  const small = formControl.querySelector("small");
-  formControl.className = "error";
-  formControl.classList.add("mb-3");
-  small.innerText = message;
-  error = true;
-}
-
-function setSuccessFor(input) {
-  const formControl = input.parentElement;
-  formControl.className = "success";
-  formControl.classList.add("mb-3");
-  console.log(formControl);
 }
 
 function isEmail(email) {

@@ -208,31 +208,31 @@ const allLinks = document.querySelectorAll(".downloadLink").forEach((link) => {
 
       // a.setAttribute("download", "download");
 
-      if (link.textContent == "Brochure")
-        a.setAttribute("href", "./7Canal Brochure.pdf");
-      else if (link.textContent == "3D Walkthrough")
-        a.setAttribute("href", "./walkthroughVideo.mp4");
-      else if (link.textContent == "Price Lists")
-        a.setAttribute("href", "./walkthroughVideo.mp4");
-      else if (link.textContent == "Construction Update")
-        a.setAttribute("href", "./walkthroughVideo.mp4");
-      else if (link.textContent == "Layouts")
-        a.setAttribute("href", "./walkthroughVideo.mp4");
-      else if (link.textContent == "Floor Plans")
-        a.setAttribute("href", "./floorplans.pdf");
-
       // if (link.textContent == "Brochure")
-      //   a.setAttribute("href", "./daonlod.jpg");
+      //   a.setAttribute("href", "./7Canal Brochure.pdf");
       // else if (link.textContent == "3D Walkthrough")
-      //   a.setAttribute("href", "./daonlod.jpg");
+      //   a.setAttribute("href", "./walkthroughVideo.mp4");
       // else if (link.textContent == "Price Lists")
-      //   a.setAttribute("href", "./daonlod.jpg");
+      //   a.setAttribute("href", "./walkthroughVideo.mp4");
       // else if (link.textContent == "Construction Update")
-      //   a.setAttribute("href", "./daonlod.jpg");
+      //   a.setAttribute("href", "./walkthroughVideo.mp4");
       // else if (link.textContent == "Layouts")
-      //   a.setAttribute("href", "./daonlod.jpg");
+      //   a.setAttribute("href", "./walkthroughVideo.mp4");
       // else if (link.textContent == "Floor Plans")
-      //   a.setAttribute("href", "./daonlod.jpg");
+      //   a.setAttribute("href", "./floorplans.pdf");
+
+      if (link.textContent == "Brochure")
+        a.setAttribute("href", "./daonlod.jpg");
+      else if (link.textContent == "3D Walkthrough")
+        a.setAttribute("href", "./daonlod.jpg");
+      else if (link.textContent == "Price Lists")
+        a.setAttribute("href", "./daonlod.jpg");
+      else if (link.textContent == "Construction Update")
+        a.setAttribute("href", "./daonlod.jpg");
+      else if (link.textContent == "Layouts")
+        a.setAttribute("href", "./daonlod.jpg");
+      else if (link.textContent == "Floor Plans")
+        a.setAttribute("href", "./daonlod.jpg");
     });
   });
 });

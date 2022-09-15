@@ -230,7 +230,8 @@ a:focus {
   }
 
   .nav-bar .navbar {
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
+    padding: 10px 50px;
   }
 
   .nav-bar .navbar-brand {
@@ -240,6 +241,7 @@ a:focus {
   .nav-bar a.nav-link {
     padding: 8px 15px;
     font-size: 15px;
+    /* font-size: 12px; */
     text-transform: uppercase;
   }
 }
@@ -2436,19 +2438,20 @@ iframe {
   background: #333;
   text-align: center;
 }
+/* 
 .header-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
+} */
+/* 
 .header-text {
   font-size: 11px;
   color: #fdbe33;
   margin-bottom: 0px;
   margin-top: 10px;
-}
+} */
 
 .light-yellow {
   color: #fdbe33 !important;
@@ -2456,4 +2459,9 @@ iframe {
 
 .dark-yellow {
   color: #cf9312 !important;
+}
+
+.navbar-brand,
+.navbar-brand-desktop {
+  width: 95px;
 }
